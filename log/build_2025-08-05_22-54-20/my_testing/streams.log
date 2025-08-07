@@ -1,0 +1,20 @@
+[0.278s] Invoking command in '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing': AMENT_PREFIX_PATH=/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces LD_LIBRARY_PATH=/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/lib/python3.10/site-packages:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_testing build --build-base /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/build install --record /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/install.log --single-version-externally-managed install_data
+[0.379s] /usr/lib/python3.10/distutils/dist.py:274: UserWarning: Unknown distribution option: 'package'
+[0.379s]   warnings.warn(msg)
+[0.382s] running egg_info
+[0.383s] writing ../../build/my_testing/my_testing.egg-info/PKG-INFO
+[0.383s] writing dependency_links to ../../build/my_testing/my_testing.egg-info/dependency_links.txt
+[0.383s] writing entry points to ../../build/my_testing/my_testing.egg-info/entry_points.txt
+[0.383s] writing requirements to ../../build/my_testing/my_testing.egg-info/requires.txt
+[0.383s] writing top-level names to ../../build/my_testing/my_testing.egg-info/top_level.txt
+[0.384s] reading manifest file '../../build/my_testing/my_testing.egg-info/SOURCES.txt'
+[0.384s] writing manifest file '../../build/my_testing/my_testing.egg-info/SOURCES.txt'
+[0.384s] running build
+[0.384s] running install
+[0.384s] running install_data
+[0.385s] running install_egg_info
+[0.386s] removing '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/lib/python3.10/site-packages/my_testing-0.0.0-py3.10.egg-info' (and everything under it)
+[0.386s] Copying ../../build/my_testing/my_testing.egg-info to /home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/lib/python3.10/site-packages/my_testing-0.0.0-py3.10.egg-info
+[0.387s] running install_scripts
+[0.398s] writing list of installed files to '/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/install.log'
+[0.410s] Invoked command in '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing' returned '0': AMENT_PREFIX_PATH=/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces LD_LIBRARY_PATH=/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/lib/python3.10/site-packages:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_testing build --build-base /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/build install --record /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/install.log --single-version-externally-managed install_data

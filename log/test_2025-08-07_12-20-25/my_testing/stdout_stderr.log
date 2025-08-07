@@ -1,0 +1,136 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0 -- /usr/bin/python3
+cachedir: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache
+rootdir: /home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing
+plugins: launch-testing-1.0.10, ament-lint-0.12.14, ament-copyright-0.12.14, ament-xmllint-0.12.14, launch-testing-ros-0.19.10, ament-pep257-0.12.14, ament-flake8-0.12.14, colcon-core-0.19.0, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 1 item                                                               [0m
+
+test/test_processor_service.py::test_processor_service [DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.IncludeLaunchDescription'
+[INFO] [launch]: All log files can be found below /home/phr/.ros/log/2025-08-07-12-20-26-299904-PHR-14589
+[INFO] [launch]: Default logging verbosity is set to DEBUG
+[DEBUG] [launch]: processing event: '<launch.events.include_launch_description.IncludeLaunchDescription object at 0x7106cb5b7190>'
+[DEBUG] [launch]: processing event: '<launch.events.include_launch_description.IncludeLaunchDescription object at 0x7106cb5b7190>' ✓ '<launch.event_handlers.on_include_launch_description.OnIncludeLaunchDescription object at 0x7106cab622f0>'
+[INFO] [number_processor-1]: process started with pid [14603]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7106c9eb81c0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7106c9eb81c0>' ✓ '<launch.event_handlers.on_process_start.OnProcessStart object at 0x7106cb5b5720>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7106c9eb81c0>' ✓ '<launch.event_handlers.on_process_start.OnProcessStart object at 0x7106cb5b70d0>'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9ede230>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9ede230>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.477200975] [number_processor_service_node]: 数字处理服务节点已启动，等待请求...
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9ede230>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+test_service (test_processor_service.TestProcessorService) ... [0m[INFO] [1754540426.613086017] [service_client_test_node]: 正在发送请求: 10...[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8520>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8520>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.613887457] [number_processor_service_node]: 收到服务请求，输入数字: 10
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8520>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8730>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8730>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[0m[INFO] [1754540426.615731363] [service_client_test_node]: 测试用例通过: 输入=10, 响应=30[0m
+[number_processor-1] [INFO] [1754540426.614231779] [number_processor_service_node]: 正在返回处理结果: 30
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8730>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[0m[INFO] [1754540426.616524491] [service_client_test_node]: 正在发送请求: -5...[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb88b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb88b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.617020791] [number_processor_service_node]: 收到服务请求，输入数字: -5
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb88b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8bb0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8bb0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.617259442] [number_processor_service_node]: 正在返回处理结果: -15
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8bb0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[0m[INFO] [1754540426.618732904] [service_client_test_node]: 测试用例通过: 输入=-5, 响应=-15[0m
+[0m[INFO] [1754540426.619577087] [service_client_test_node]: 正在发送请求: 0...[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8430>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8430>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.620105444] [number_processor_service_node]: 收到服务请求，输入数字: 0
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8430>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[0m[INFO] [1754540426.621508855] [service_client_test_node]: 测试用例通过: 输入=0, 响应=0[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8b20>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8b20>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.620389213] [number_processor_service_node]: 正在返回处理结果: 0
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8b20>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[0m[INFO] [1754540426.622757914] [service_client_test_node]: 正在发送请求: 1...[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8850>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8850>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.623361072] [number_processor_service_node]: 收到服务请求，输入数字: 1
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8850>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[0m[INFO] [1754540426.624574511] [service_client_test_node]: 测试用例通过: 输入=1, 响应=3[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8a90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8a90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.623648403] [number_processor_service_node]: 正在返回处理结果: 3
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8a90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[0m[INFO] [1754540426.625701276] [service_client_test_node]: 正在发送请求: 100...[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8550>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8550>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.626160769] [number_processor_service_node]: 收到服务请求，输入数字: 100
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8550>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8670>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8670>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] [INFO] [1754540426.626404169] [number_processor_service_node]: 正在返回处理结果: 300
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8670>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[0m[INFO] [1754540426.627974991] [service_client_test_node]: 测试用例通过: 输入=100, 响应=300[0m
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.312s
+
+OK
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.Shutdown'
+[DEBUG] [launch]: processing event: '<launch.events.shutdown.Shutdown object at 0x7106cb5b7b20>'
+[DEBUG] [launch]: processing event: '<launch.events.shutdown.Shutdown object at 0x7106cb5b7b20>' ✓ '<launch.event_handlers.on_shutdown.OnShutdown object at 0x7106cb5f9c30>'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.SignalProcess'
+[DEBUG] [launch]: processing event: '<launch.events.shutdown.Shutdown object at 0x7106cb5b7b20>' ✓ '<launch.event_handlers.on_shutdown.OnShutdown object at 0x7106cab62410>'
+[DEBUG] [launch]: processing event: '<launch.events.process.signal_process.SignalProcess object at 0x7106c9eb8910>'
+[DEBUG] [launch]: processing event: '<launch.events.process.signal_process.SignalProcess object at 0x7106c9eb8910>' ✓ '<launch.event_handler.EventHandler object at 0x7106cb5fae30>'
+[INFO] [number_processor-1]: sending signal 'SIGINT' to process[number_processor-1]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eddc00>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eddc00>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1] Traceback (most recent call last):
+[number_processor-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor", line 33, in <module>
+[number_processor-1]     sys.exit(load_entry_point('my-algorithms==0.0.0', 'console_scripts', 'number_processor')())
+[number_processor-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_processor_node.py", line 38, in main
+[number_processor-1]     rclpy.spin(node) 
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[number_processor-1]     executor.spin_once()
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[number_processor-1]     self._spin_once_impl(timeout_sec)
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[number_processor-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[number_processor-1]     return next(self._cb_iter)
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eddc00>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8490>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8490>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5fbf70>'
+[number_processor-1]     wait_set.wait(timeout_nsec)
+[number_processor-1] KeyboardInterrupt
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7106c9eb8490>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7106cb5b75e0>'
+[ERROR] [number_processor-1]: process has died [pid 14603, exit code -2, cmd '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor --ros-args -r __node:=number_processor_service_node'].
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessExited'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7106c9eb87f0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7106c9eb87f0>' ✓ '<launch.event_handlers.on_process_exit.OnProcessExit object at 0x7106cb5fbfd0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7106c9eb87f0>' ✓ '<launch.event_handlers.on_process_exit.OnProcessExit object at 0x7106cb5fabf0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7106c9eb87f0>' ✓ '<launch.event_handlers.on_process_exit.OnProcessExit object at 0x7106cb5b42e0>'
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+[32mPASSED[0m
+
+- generated xml file: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml -
+[32m============================== [32m[1m1 passed[0m[32m in 0.45s[0m[32m ===============================[0m

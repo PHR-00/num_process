@@ -1,0 +1,24 @@
+test_communication_and_logic (test_integration.TestIntegration) ... [0m[INFO] [1754405683.426759387] [test_subscriber_node]: 测试节点test_subscriber_node已创建[0m
+[0m[INFO] [1754405686.497098409] [test_subscriber_node]: 检查接收到的消息。 Got: [2, 4, 6][0m
+[0m[INFO] [1754405686.501478350] [test_subscriber_node]: 测试结束，销毁测试节点[0m
+ok
+test_processor_starts_ok (test_integration.TestIntegration) ... [0m[INFO] [1754405686.510479251] [test_subscriber_node]: 测试节点test_subscriber_node已创建[0m
+[0m[INFO] [1754405686.511025408] [test_subscriber_node]: 正在检查 processor 节点的启动日志...[0m
+[0m[INFO] [1754405686.511729475] [test_subscriber_node]: Processor 节点启动正常。[0m
+[0m[INFO] [1754405686.516117726] [test_subscriber_node]: 测试结束，销毁测试节点[0m
+ok
+test_publisher_starts_ok (test_integration.TestIntegration) ... [0m[INFO] [1754405686.523816163] [test_subscriber_node]: 测试节点test_subscriber_node已创建[0m
+[0m[INFO] [1754405686.524297018] [test_subscriber_node]: 正在检查 publisher 节点的启动日志...[0m
+[0m[INFO] [1754405686.524783810] [test_subscriber_node]: Publisher 节点启动正常。[0m
+[0m[INFO] [1754405686.528127240] [test_subscriber_node]: 测试结束，销毁测试节点[0m
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 3.138s
+
+OK
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK

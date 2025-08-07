@@ -1,0 +1,24 @@
+/usr/lib/python3.10/distutils/dist.py:274: UserWarning: Unknown distribution option: 'package'
+  warnings.warn(msg)
+running egg_info
+creating ../../build/my_testing/my_testing.egg-info
+writing ../../build/my_testing/my_testing.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_testing/my_testing.egg-info/dependency_links.txt
+writing entry points to ../../build/my_testing/my_testing.egg-info/entry_points.txt
+writing requirements to ../../build/my_testing/my_testing.egg-info/requires.txt
+writing top-level names to ../../build/my_testing/my_testing.egg-info/top_level.txt
+writing manifest file '../../build/my_testing/my_testing.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_testing/my_testing.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_testing/my_testing.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/share/ament_index
+creating /home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/share/ament_index/resource_index
+creating /home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/share/ament_index/resource_index/packages
+copying resource/my_testing -> /home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/share/ament_index/resource_index/packages
+copying package.xml -> /home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/share/my_testing
+running install_egg_info
+Copying ../../build/my_testing/my_testing.egg-info to /home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/lib/python3.10/site-packages/my_testing-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/install.log'

@@ -1,0 +1,165 @@
+[0.000000] (-) TimerEvent: {}
+[0.000145] (my_testing) JobQueued: {'identifier': 'my_testing', 'dependencies': OrderedDict([('my_interfaces', '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces'), ('my_algorithms', '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms'), ('my_testing', '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing')])}
+[0.000177] (my_testing) JobStarted: {'identifier': 'my_testing'}
+[0.099572] (-) TimerEvent: {}
+[0.121736] (my_testing) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HTTPS_PROXY': 'http://127.0.0.1:7897/', 'no_proxy': 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1', 'LANGUAGE': 'zh_CN:zh', 'USER': 'phr', 'all_proxy': 'socks://127.0.0.1:7897/', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/phr', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.102.2', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '3581', 'BUNDLED_DEBUGPY_PATH': '/home/phr/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d19e3bad55dd89a86e0afaef689167f4', 'COLORTERM': 'truecolor', 'https_proxy': 'http://127.0.0.1:7897/', 'COLCON_PREFIX_PATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'phr', 'ALL_PROXY': 'socks://127.0.0.1:7897/', 'http_proxy': 'http://127.0.0.1:7897/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phr', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/phr/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/phr/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/PHR:@/tmp/.ICE-unix/3581,unix/PHR:/tmp/.ICE-unix/3581', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1940d91a_189f_43fa_94e8_8d072caef7c4', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/phr/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-34aef6fe3a9e5cf6.txt', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-02258c1e82.sock', 'GNOME_TERMINAL_SERVICE': ':1.224', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'ROSDISTRO_INDEX_URL': 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d19e3bad55dd89a86e0afaef689167f4', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/lib/python3.10/site-packages:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://127.0.0.1:7897/', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml --junit-prefix=my_testing -o cache_dir=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache -s'}, 'shell': False}
+[0.199622] (-) TimerEvent: {}
+[0.255439] (my_testing) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.255628] (my_testing) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[0.257406] (my_testing) StdoutLine: {'line': b'cachedir: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache\n'}
+[0.257472] (my_testing) StdoutLine: {'line': b'rootdir: /home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing\n'}
+[0.257507] (my_testing) StdoutLine: {'line': b'plugins: launch-testing-1.0.10, ament-lint-0.12.14, ament-copyright-0.12.14, ament-xmllint-0.12.14, launch-testing-ros-0.19.10, ament-pep257-0.12.14, ament-flake8-0.12.14, colcon-core-0.19.0, cov-3.0.0\n'}
+[0.299720] (-) TimerEvent: {}
+[0.319490] (my_testing) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.319622] (my_testing) StdoutLine: {'line': b'collected 1 item                                                               \x1b[0m\n'}
+[0.319712] (my_testing) StdoutLine: {'line': b'\n'}
+[0.327558] (my_testing) StdoutLine: {'line': b'test/test_integration.py [INFO] [launch]: All log files can be found below /home/phr/.ros/log/2025-08-05-22-52-36-691412-PHR-56078\n'}
+[0.327693] (my_testing) StdoutLine: {'line': b'[INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[0.337551] (my_testing) StdoutLine: {'line': b'[INFO] [number_publisher-1]: process started with pid [56092]\n'}
+[0.337812] (my_testing) StdoutLine: {'line': b'[INFO] [number_processor-2]: process started with pid [56094]\n'}
+[0.362113] (my_testing) StderrLine: {'line': b'test_communication_and_logic (test_integration.TestIntegration) ... \x1b[0m[INFO] [1754405556.733492474] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9test_subscriber_node\xe5\xb7\xb2\xe5\x88\x9b\xe5\xbb\xba\x1b[0m\n'}
+[0.399811] (-) TimerEvent: {}
+[0.434639] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754405556.805790813] [number_processor]: \xe6\x95\xb0\xe5\xad\x97\xe5\xa4\x84\xe7\x90\x86\xe8\x8a\x82\xe7\x82\xb9\xe5\xb7\xb2\xe5\x90\xaf\xe5\x8a\xa8\xef\xbc\x8c\xe7\xad\x89\xe5\xbe\x85\xe6\x8e\xa5\xe6\x94\xb6\xe6\x95\xb0\xe5\xad\x97...\n'}
+[0.434817] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754405556.805790813] [number_publisher]: \xe6\x95\xb0\xe5\xad\x97\xe5\x8f\x91\xe5\xb8\x83\xe8\x8a\x82\xe7\x82\xb9\xe5\xb7\xb2\xe5\x90\xaf\xe5\x8a\xa8\xef\xbc\x8c\xe5\xb0\x86\xe4\xbb\x8e1\xe5\xbc\x80\xe5\xa7\x8b\xe5\x8f\x91\xe5\xb8\x83...\n'}
+[0.499927] (-) TimerEvent: {}
+[0.600162] (-) TimerEvent: {}
+[0.700395] (-) TimerEvent: {}
+[0.800612] (-) TimerEvent: {}
+[0.900813] (-) TimerEvent: {}
+[1.001021] (-) TimerEvent: {}
+[1.101253] (-) TimerEvent: {}
+[1.201394] (-) TimerEvent: {}
+[1.301617] (-) TimerEvent: {}
+[1.401877] (-) TimerEvent: {}
+[1.430110] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754405557.801146784] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 1\n'}
+[1.430432] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754405557.801461424] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 1\n'}
+[1.431313] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754405557.802204686] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 3\n'}
+[1.502013] (-) TimerEvent: {}
+[1.602282] (-) TimerEvent: {}
+[1.702565] (-) TimerEvent: {}
+[1.802766] (-) TimerEvent: {}
+[1.903044] (-) TimerEvent: {}
+[2.003264] (-) TimerEvent: {}
+[2.103523] (-) TimerEvent: {}
+[2.203781] (-) TimerEvent: {}
+[2.304038] (-) TimerEvent: {}
+[2.404326] (-) TimerEvent: {}
+[2.430091] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754405558.801136870] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 2\n'}
+[2.430423] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754405558.801497816] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 2\n'}
+[2.431157] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754405558.802161528] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 6\n'}
+[2.504419] (-) TimerEvent: {}
+[2.604705] (-) TimerEvent: {}
+[2.704947] (-) TimerEvent: {}
+[2.805209] (-) TimerEvent: {}
+[2.905430] (-) TimerEvent: {}
+[3.005700] (-) TimerEvent: {}
+[3.105954] (-) TimerEvent: {}
+[3.206230] (-) TimerEvent: {}
+[3.306433] (-) TimerEvent: {}
+[3.406700] (-) TimerEvent: {}
+[3.430116] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754405559.801151893] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 3\n'}
+[3.430898] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754405559.801400043] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 3\n'}
+[3.431299] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754405559.802117185] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 9\n'}
+[3.432039] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754405559.803357935] [test_subscriber_node]: \xe6\xa3\x80\xe6\x9f\xa5\xe6\x8e\xa5\xe6\x94\xb6\xe5\x88\xb0\xe7\x9a\x84\xe6\xb6\x88\xe6\x81\xaf\xe3\x80\x82 Got: [3, 6, 9]\x1b[0m\n'}
+[3.438511] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754405559.808182019] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe7\xbb\x93\xe6\x9d\x9f\xef\xbc\x8c\xe9\x94\x80\xe6\xaf\x81\xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9\x1b[0m\n'}
+[3.438694] (my_testing) StderrLine: {'line': b'FAIL\n'}
+[3.446361] (my_testing) StderrLine: {'line': b'test_processor_starts_ok (test_integration.TestIntegration) ... \x1b[0m[INFO] [1754405559.817745889] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9test_subscriber_node\xe5\xb7\xb2\xe5\x88\x9b\xe5\xbb\xba\x1b[0m\n'}
+[3.446847] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754405559.818225566] [test_subscriber_node]: \xe6\xad\xa3\xe5\x9c\xa8\xe6\xa3\x80\xe6\x9f\xa5 processor \xe8\x8a\x82\xe7\x82\xb9\xe7\x9a\x84\xe5\x90\xaf\xe5\x8a\xa8\xe6\x97\xa5\xe5\xbf\x97...\x1b[0m\n'}
+[3.447289] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754405559.818733739] [test_subscriber_node]: Processor \xe8\x8a\x82\xe7\x82\xb9\xe5\x90\xaf\xe5\x8a\xa8\xe6\xad\xa3\xe5\xb8\xb8\xe3\x80\x82\x1b[0m\n'}
+[3.451269] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754405559.822637650] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe7\xbb\x93\xe6\x9d\x9f\xef\xbc\x8c\xe9\x94\x80\xe6\xaf\x81\xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9\x1b[0m\n'}
+[3.451557] (my_testing) StderrLine: {'line': b'ok\n'}
+[3.458749] (my_testing) StderrLine: {'line': b'test_publisher_starts_ok (test_integration.TestIntegration) ... \x1b[0m[INFO] [1754405559.830134394] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9test_subscriber_node\xe5\xb7\xb2\xe5\x88\x9b\xe5\xbb\xba\x1b[0m\n'}
+[3.459162] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754405559.830604573] [test_subscriber_node]: \xe6\xad\xa3\xe5\x9c\xa8\xe6\xa3\x80\xe6\x9f\xa5 publisher \xe8\x8a\x82\xe7\x82\xb9\xe7\x9a\x84\xe5\x90\xaf\xe5\x8a\xa8\xe6\x97\xa5\xe5\xbf\x97...\x1b[0m\n'}
+[3.459640] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754405559.831086625] [test_subscriber_node]: Publisher \xe8\x8a\x82\xe7\x82\xb9\xe5\x90\xaf\xe5\x8a\xa8\xe6\xad\xa3\xe5\xb8\xb8\xe3\x80\x82\x1b[0m\n'}
+[3.463670] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754405559.835091458] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe7\xbb\x93\xe6\x9d\x9f\xef\xbc\x8c\xe9\x94\x80\xe6\xaf\x81\xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9\x1b[0m\n'}
+[3.463877] (my_testing) StderrLine: {'line': b'ok\n'}
+[3.464157] (my_testing) StderrLine: {'line': b'\n'}
+[3.464347] (my_testing) StderrLine: {'line': b'======================================================================\n'}
+[3.464454] (my_testing) StderrLine: {'line': b'FAIL: test_communication_and_logic (test_integration.TestIntegration)\n'}
+[3.464532] (my_testing) StderrLine: {'line': b'----------------------------------------------------------------------\n'}
+[3.464608] (my_testing) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.464681] (my_testing) StderrLine: {'line': b'  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_integration.py", line 84, in test_communication_and_logic\n'}
+[3.464771] (my_testing) StderrLine: {'line': b'    self.assertEqual(sorted(self.received_messages), sorted(expected_results))\n'}
+[3.464850] (my_testing) StderrLine: {'line': b'AssertionError: Lists differ: [3, 6, 9] != [2, 4, 6]\n'}
+[3.464924] (my_testing) StderrLine: {'line': b'\n'}
+[3.464998] (my_testing) StderrLine: {'line': b'First differing element 0:\n'}
+[3.465074] (my_testing) StderrLine: {'line': b'3\n'}
+[3.465147] (my_testing) StderrLine: {'line': b'2\n'}
+[3.465231] (my_testing) StderrLine: {'line': b'\n'}
+[3.465310] (my_testing) StderrLine: {'line': b'- [3, 6, 9]\n'}
+[3.465379] (my_testing) StderrLine: {'line': b'+ [2, 4, 6]\n'}
+[3.465445] (my_testing) StderrLine: {'line': b'\n'}
+[3.465512] (my_testing) StderrLine: {'line': b'----------------------------------------------------------------------\n'}
+[3.465582] (my_testing) StderrLine: {'line': b'Ran 3 tests in 3.136s\n'}
+[3.465647] (my_testing) StderrLine: {'line': b'\n'}
+[3.465712] (my_testing) StderrLine: {'line': b'FAILED (failures=1)\n'}
+[3.466045] (my_testing) StdoutLine: {'line': b"[INFO] [number_processor-2]: sending signal 'SIGINT' to process[number_processor-2]\n"}
+[3.466585] (my_testing) StdoutLine: {'line': b"[INFO] [number_publisher-1]: sending signal 'SIGINT' to process[number_publisher-1]\n"}
+[3.466900] (my_testing) StdoutLine: {'line': b'[number_processor-2] Traceback (most recent call last):\n'}
+[3.467025] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor", line 33, in <module>\n'}
+[3.467382] (my_testing) StdoutLine: {'line': b"[number_processor-2]     sys.exit(load_entry_point('my-algorithms==0.0.0', 'console_scripts', 'number_processor')())\n"}
+[3.467522] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_processor_node.py", line 32, in main\n'}
+[3.467897] (my_testing) StdoutLine: {'line': b'[number_processor-2]     rclpy.spin(node)\n'}
+[3.468077] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin\n'}
+[3.468170] (my_testing) StdoutLine: {'line': b'[number_processor-2]     executor.spin_once()\n'}
+[3.468272] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once\n'}
+[3.468353] (my_testing) StdoutLine: {'line': b'[number_processor-2]     self._spin_once_impl(timeout_sec)\n'}
+[3.468464] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl\n'}
+[3.468576] (my_testing) StdoutLine: {'line': b'[number_publisher-1] Traceback (most recent call last):\n'}
+[3.468668] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_publisher", line 33, in <module>\n'}
+[3.468772] (my_testing) StdoutLine: {'line': b"[number_publisher-1]     sys.exit(load_entry_point('my-algorithms==0.0.0', 'console_scripts', 'number_publisher')())\n"}
+[3.468871] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_publisher_node.py", line 25, in main\n'}
+[3.468990] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     rclpy.spin(node)\n'}
+[3.469059] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin\n'}
+[3.469126] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     executor.spin_once()\n'}
+[3.469230] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once\n'}
+[3.469351] (my_testing) StdoutLine: {'line': b'[number_processor-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)\n'}
+[3.469482] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks\n'}
+[3.469552] (my_testing) StdoutLine: {'line': b'[number_processor-2]     return next(self._cb_iter)\n'}
+[3.469620] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks\n'}
+[3.469717] (my_testing) StdoutLine: {'line': b'[number_processor-2]     wait_set.wait(timeout_nsec)\n'}
+[3.469832] (my_testing) StdoutLine: {'line': b'[number_processor-2] KeyboardInterrupt\n'}
+[3.469921] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     self._spin_once_impl(timeout_sec)\n'}
+[3.470018] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl\n'}
+[3.470092] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)\n'}
+[3.470162] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks\n'}
+[3.470249] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     return next(self._cb_iter)\n'}
+[3.470330] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks\n'}
+[3.470397] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     wait_set.wait(timeout_nsec)\n'}
+[3.470463] (my_testing) StdoutLine: {'line': b'[number_publisher-1] KeyboardInterrupt\n'}
+[3.493754] (my_testing) StdoutLine: {'line': b"[ERROR] [number_publisher-1]: process has died [pid 56092, exit code -2, cmd '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_publisher --ros-args -r __node:=number_publisher'].\n"}
+[3.494886] (my_testing) StdoutLine: {'line': b"[ERROR] [number_processor-2]: process has died [pid 56094, exit code -2, cmd '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor --ros-args -r __node:=number_processor'].\n"}
+[3.495305] (my_testing) StderrLine: {'line': b'\n'}
+[3.495450] (my_testing) StderrLine: {'line': b'----------------------------------------------------------------------\n'}
+[3.495545] (my_testing) StderrLine: {'line': b'Ran 0 tests in 0.000s\n'}
+[3.495619] (my_testing) StderrLine: {'line': b'\n'}
+[3.495710] (my_testing) StderrLine: {'line': b'OK\n'}
+[3.504404] (my_testing) StdoutLine: {'line': b'\x1b[31mF\x1b[0m\n'}
+[3.504507] (my_testing) StdoutLine: {'line': b'\n'}
+[3.504674] (my_testing) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[3.504753] (my_testing) StdoutLine: {'line': b'\x1b[31m\x1b[1m________________________ launch tests: test_integration ________________________\x1b[0m\n'}
+[3.504842] (my_testing) StdoutLine: {'line': b'\n'}
+[3.504934] (my_testing) StdoutLine: {'line': b'==========================================================================================================================================\n'}
+[3.505046] (my_testing) StdoutLine: {'line': b'FAIL: test_integration.TestIntegration.test_communication_and_logic\n'}
+[3.505125] (my_testing) StdoutLine: {'line': b'------------------------------------------------------------------------------------------------------------------------------------------\n'}
+[3.505210] (my_testing) StdoutLine: {'line': b'Traceback (most recent call last):\n'}
+[3.505289] (my_testing) StdoutLine: {'line': b'  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_integration.py", line 84, in test_communication_and_logic\n'}
+[3.505547] (my_testing) StdoutLine: {'line': b'    self.assertEqual(sorted(self.received_messages), sorted(expected_results))\n'}
+[3.505672] (my_testing) StdoutLine: {'line': b'AssertionError: Lists differ: [3, 6, 9] != [2, 4, 6]\n'}
+[3.505772] (my_testing) StdoutLine: {'line': b'\n'}
+[3.505848] (my_testing) StdoutLine: {'line': b'First differing element 0:\n'}
+[3.505920] (my_testing) StdoutLine: {'line': b'3\n'}
+[3.505992] (my_testing) StdoutLine: {'line': b'2\n'}
+[3.506092] (my_testing) StdoutLine: {'line': b'\n'}
+[3.506285] (my_testing) StdoutLine: {'line': b'- [3, 6, 9]\n'}
+[3.506396] (my_testing) StdoutLine: {'line': b'+ [2, 4, 6]\n'}
+[3.506480] (my_testing) StdoutLine: {'line': b'- generated xml file: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml -\n'}
+[3.506562] (my_testing) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[3.506640] (my_testing) StdoutLine: {'line': b'FAILED test/test_integration.py::test_integration - test_integration.TestInte...\n'}
+[3.506727] (-) TimerEvent: {}
+[3.506822] (my_testing) StdoutLine: {'line': b'\x1b[31m============================== \x1b[31m\x1b[1m1 failed\x1b[0m\x1b[31m in 3.25s\x1b[0m\x1b[31m ===============================\x1b[0m\n'}
+[3.606879] (-) TimerEvent: {}
+[3.668865] (my_testing) CommandEnded: {'returncode': 1}
+[3.669398] (my_testing) TestFailure: {'identifier': 'my_testing'}
+[3.669440] (my_testing) JobEnded: {'identifier': 'my_testing', 'rc': 0}
+[3.670181] (-) EventReactorShutdown: {}

@@ -1,0 +1,4 @@
+[console_scripts]
+number_processor = my_algorithms.number_processor_node:main
+number_publisher = my_algorithms.number_publisher_node:main
+

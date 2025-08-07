@@ -1,0 +1,57 @@
+test_communication_and_logic (test_integration.TestIntegration) ... [0m[INFO] [1754405007.458808819] [test_subscriber_node]: 测试节点test_subscriber_node已创建[0m
+[0m[INFO] [1754405010.528378108] [test_subscriber_node]: 检查接收到的消息。 Got: [3, 6, 9][0m
+[0m[INFO] [1754405010.531279912] [test_subscriber_node]: 测试结束，销毁测试节点[0m
+FAIL
+test_processor_starts_ok (test_integration.TestIntegration) ... [0m[INFO] [1754405010.537540640] [test_subscriber_node]: 测试节点test_subscriber_node已创建[0m
+[0m[INFO] [1754405010.537789976] [test_subscriber_node]: 正在检查 processor 节点的启动日志...[0m
+[0m[INFO] [1754405013.540172577] [test_subscriber_node]: 测试结束，销毁测试节点[0m
+FAIL
+test_publisher_starts_ok (test_integration.TestIntegration) ... [0m[INFO] [1754405013.544470668] [test_subscriber_node]: 测试节点test_subscriber_node已创建[0m
+[0m[INFO] [1754405013.544693884] [test_subscriber_node]: 正在检查 publisher 节点的启动日志...[0m
+[0m[INFO] [1754405016.548793413] [test_subscriber_node]: 测试结束，销毁测试节点[0m
+FAIL
+
+======================================================================
+FAIL: test_communication_and_logic (test_integration.TestIntegration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_integration.py", line 84, in test_communication_and_logic
+    self.assertEqual(sorted(self.received_messages), sorted(expected_results))
+AssertionError: Lists differ: [3, 6, 9] != [2, 4, 6]
+
+First differing element 0:
+3
+2
+
+- [3, 6, 9]
++ [2, 4, 6]
+
+======================================================================
+FAIL: test_processor_starts_ok (test_integration.TestIntegration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_integration.py", line 65, in test_processor_starts_ok
+    proc_output.assertWaitFor('数字处理节点已启动，等待接收数字...',process='number_processor',stream='stdout',timeout=3)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_testing/io_handler.py", line 146, in assertWaitFor
+    assert success, 'Waiting for output timed out'
+AssertionError: Waiting for output timed out
+
+======================================================================
+FAIL: test_publisher_starts_ok (test_integration.TestIntegration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_integration.py", line 59, in test_publisher_starts_ok
+    proc_output.assertWaitFor('数字发布节点已启动，将从1开始发布...',process='number_publisher',stream='stdout',timeout=3)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_testing/io_handler.py", line 146, in assertWaitFor
+    assert success, 'Waiting for output timed out'
+AssertionError: Waiting for output timed out
+
+----------------------------------------------------------------------
+Ran 3 tests in 9.124s
+
+FAILED (failures=3)
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK

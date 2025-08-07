@@ -1,0 +1,122 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache
+rootdir: /home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing
+plugins: launch-testing-1.0.10, ament-lint-0.12.14, ament-copyright-0.12.14, ament-xmllint-0.12.14, launch-testing-ros-0.19.10, ament-pep257-0.12.14, ament-flake8-0.12.14, colcon-core-0.19.0, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 1 item                                                               [0m
+
+test/test_integration.py [31mF[0m[31m                                               [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m________________________ launch tests: test_integration ________________________[0m
+
+======================================================================================================================================
+FAIL: test_integration.TestIntegration.test_processor_starts_ok
+--------------------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_integration.py", line 65, in test_processor_starts_ok
+    proc_output.assertWaitFor('数字处理节点已启动，等待接收数字...',stream='stdout',timeout=1)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_testing/io_handler.py", line 146, in assertWaitFor
+    assert success, 'Waiting for output timed out'
+AssertionError: Waiting for output timed out
+
+
+======================================================================================================================================
+FAIL: test_integration.TestIntegration.test_publisher_starts_ok
+--------------------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_integration.py", line 59, in test_publisher_starts_ok
+    proc_output.assertWaitFor('数字发布节点已启动，将从1开始发布...',stream='stdout',timeout=1)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_testing/io_handler.py", line 146, in assertWaitFor
+    assert success, 'Waiting for output timed out'
+AssertionError: Waiting for output timed out
+----------------------------- Captured stdout call -----------------------------
+[INFO] [launch]: All log files can be found below /home/phr/.ros/log/2025-08-05-22-46-47-721335-PHR-55336
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [number_publisher-1]: process started with pid [55350]
+[INFO] [number_processor-2]: process started with pid [55352]
+[number_publisher-1] [INFO] [1754405207.835823630] [number_publisher]: 数字发布节点已启动，将从1开始发布...
+[number_processor-2] [INFO] [1754405207.836419664] [number_processor]: 数字处理节点已启动，等待接收数字...
+[number_publisher-1] [INFO] [1754405208.831058419] [number_publisher]: 发布: 1
+[number_processor-2] [INFO] [1754405208.831478730] [number_processor]: 收到: 1
+[number_processor-2] [INFO] [1754405208.832233865] [number_processor]: 发布处理后结果: 3
+[INFO] [number_processor-2]: sending signal 'SIGINT' to process[number_processor-2]
+[INFO] [number_publisher-1]: sending signal 'SIGINT' to process[number_publisher-1]
+[number_processor-2] Traceback (most recent call last):
+[number_processor-2]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor", line 33, in <module>
+[number_processor-2]     sys.exit(load_entry_point('my-algorithms==0.0.0', 'console_scripts', 'number_processor')())
+[number_processor-2]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_processor_node.py", line 32, in main
+[number_processor-2]     rclpy.spin(node)
+[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[number_processor-2]     executor.spin_once()
+[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[number_publisher-1] Traceback (most recent call last):
+[number_publisher-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_publisher", line 33, in <module>
+[number_publisher-1]     sys.exit(load_entry_point('my-algorithms==0.0.0', 'console_scripts', 'number_publisher')())
+[number_publisher-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_publisher_node.py", line 25, in main
+[number_publisher-1]     rclpy.spin(node)
+[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[number_publisher-1]     executor.spin_once()
+[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[number_publisher-1]     self._spin_once_impl(timeout_sec)
+[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[number_publisher-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[number_publisher-1]     return next(self._cb_iter)
+[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+[number_publisher-1]     wait_set.wait(timeout_nsec)
+[number_publisher-1] KeyboardInterrupt
+[number_processor-2]     self._spin_once_impl(timeout_sec)
+[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[number_processor-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[number_processor-2]     return next(self._cb_iter)
+[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+[number_processor-2]     wait_set.wait(timeout_nsec)
+[number_processor-2] KeyboardInterrupt
+[ERROR] [number_processor-2]: process has died [pid 55352, exit code -2, cmd '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor --ros-args -r __node:=number_processor'].
+[ERROR] [number_publisher-1]: process has died [pid 55350, exit code -2, cmd '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_publisher --ros-args -r __node:=number_publisher'].
+----------------------------- Captured stderr call -----------------------------
+test_processor_starts_ok (test_integration.TestIntegration) ... [INFO] [1754405207.762894917] [test_subscriber_node]: 测试节点test_subscriber_node已创建
+[INFO] [1754405207.763143066] [test_subscriber_node]: 正在检查 processor 节点的启动日志...
+[INFO] [1754405208.767400295] [test_subscriber_node]: 测试结束，销毁测试节点
+FAIL
+test_publisher_starts_ok (test_integration.TestIntegration) ... [INFO] [1754405208.775825512] [test_subscriber_node]: 测试节点test_subscriber_node已创建
+[INFO] [1754405208.776295691] [test_subscriber_node]: 正在检查 publisher 节点的启动日志...
+[INFO] [1754405209.780199103] [test_subscriber_node]: 测试结束，销毁测试节点
+FAIL
+
+======================================================================
+FAIL: test_processor_starts_ok (test_integration.TestIntegration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_integration.py", line 65, in test_processor_starts_ok
+    proc_output.assertWaitFor('数字处理节点已启动，等待接收数字...',stream='stdout',timeout=1)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_testing/io_handler.py", line 146, in assertWaitFor
+    assert success, 'Waiting for output timed out'
+AssertionError: Waiting for output timed out
+
+======================================================================
+FAIL: test_publisher_starts_ok (test_integration.TestIntegration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_integration.py", line 59, in test_publisher_starts_ok
+    proc_output.assertWaitFor('数字发布节点已启动，将从1开始发布...',stream='stdout',timeout=1)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_testing/io_handler.py", line 146, in assertWaitFor
+    assert success, 'Waiting for output timed out'
+AssertionError: Waiting for output timed out
+
+----------------------------------------------------------------------
+Ran 2 tests in 2.052s
+
+FAILED (failures=2)
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+- generated xml file: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_integration.py::test_integration - test_integration.TestInte...
+[31m============================== [31m[1m1 failed[0m[31m in 2.17s[0m[31m ===============================[0m

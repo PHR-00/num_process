@@ -1,0 +1,4 @@
+Invoking command in '/home/phr/vscode_project/ros2_launch_testing_ws/build/my_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/phr/vscode_project/ros2_launch_testing_ws/build/my_interfaces -- -j32 -l32
+Invoked command in '/home/phr/vscode_project/ros2_launch_testing_ws/build/my_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/phr/vscode_project/ros2_launch_testing_ws/build/my_interfaces -- -j32 -l32
+Invoking command in '/home/phr/vscode_project/ros2_launch_testing_ws/build/my_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/phr/vscode_project/ros2_launch_testing_ws/build/my_interfaces
+Invoked command in '/home/phr/vscode_project/ros2_launch_testing_ws/build/my_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/phr/vscode_project/ros2_launch_testing_ws/build/my_interfaces

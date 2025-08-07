@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+../../build/my_testing/my_testing.egg-info/PKG-INFO
+../../build/my_testing/my_testing.egg-info/SOURCES.txt
+../../build/my_testing/my_testing.egg-info/dependency_links.txt
+../../build/my_testing/my_testing.egg-info/entry_points.txt
+../../build/my_testing/my_testing.egg-info/requires.txt
+../../build/my_testing/my_testing.egg-info/top_level.txt
+../../build/my_testing/my_testing.egg-info/zip-safe
+resource/my_testing
+test/test_integration.py
+test/test_processor_service.py

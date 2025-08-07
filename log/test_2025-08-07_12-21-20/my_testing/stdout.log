@@ -1,0 +1,44 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache
+rootdir: /home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing
+plugins: launch-testing-1.0.10, ament-lint-0.12.14, ament-copyright-0.12.14, ament-xmllint-0.12.14, launch-testing-ros-0.19.10, ament-pep257-0.12.14, ament-flake8-0.12.14, colcon-core-0.19.0, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 1 item                                                               [0m
+
+test/test_processor_service.py [INFO] [launch]: All log files can be found below /home/phr/.ros/log/2025-08-07-12-21-20-574724-PHR-14799
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [number_processor-1]: process started with pid [14813]
+[number_processor-1] [INFO] [1754540480.686322365] [number_processor_service_node]: 数字处理服务节点已启动，等待请求...
+[number_processor-1] [INFO] [1754540480.867012323] [number_processor_service_node]: 收到服务请求，输入数字: 10
+[number_processor-1] [INFO] [1754540480.867286594] [number_processor_service_node]: 正在返回处理结果: 30
+[number_processor-1] [INFO] [1754540480.868614018] [number_processor_service_node]: 收到服务请求，输入数字: -5
+[number_processor-1] [INFO] [1754540480.868878790] [number_processor_service_node]: 正在返回处理结果: -15
+[number_processor-1] [INFO] [1754540480.870026929] [number_processor_service_node]: 收到服务请求，输入数字: 0
+[number_processor-1] [INFO] [1754540480.870281015] [number_processor_service_node]: 正在返回处理结果: 0
+[number_processor-1] [INFO] [1754540480.871385223] [number_processor_service_node]: 收到服务请求，输入数字: 1
+[number_processor-1] [INFO] [1754540480.871651183] [number_processor_service_node]: 正在返回处理结果: 3
+[number_processor-1] [INFO] [1754540480.873048659] [number_processor_service_node]: 收到服务请求，输入数字: 100
+[number_processor-1] [INFO] [1754540480.873292060] [number_processor_service_node]: 正在返回处理结果: 300
+[INFO] [number_processor-1]: sending signal 'SIGINT' to process[number_processor-1]
+[number_processor-1] Traceback (most recent call last):
+[number_processor-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor", line 33, in <module>
+[number_processor-1]     sys.exit(load_entry_point('my-algorithms==0.0.0', 'console_scripts', 'number_processor')())
+[number_processor-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_processor_node.py", line 38, in main
+[number_processor-1]     rclpy.spin(node) 
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[number_processor-1]     executor.spin_once()
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[number_processor-1]     self._spin_once_impl(timeout_sec)
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[number_processor-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[number_processor-1]     return next(self._cb_iter)
+[number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+[number_processor-1]     wait_set.wait(timeout_nsec)
+[number_processor-1] KeyboardInterrupt
+[ERROR] [number_processor-1]: process has died [pid 14813, exit code -2, cmd '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor --ros-args -r __node:=number_processor_service_node'].
+[32m.[0m
+
+- generated xml file: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml -
+[32m============================== [32m[1m1 passed[0m[32m in 0.39s[0m[32m ===============================[0m

@@ -1,0 +1,290 @@
+[0.000000] (-) TimerEvent: {}
+[0.000226] (my_testing) JobQueued: {'identifier': 'my_testing', 'dependencies': OrderedDict([('my_interfaces', '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces'), ('my_algorithms', '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms'), ('my_testing', '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing')])}
+[0.000273] (my_testing) JobStarted: {'identifier': 'my_testing'}
+[0.099168] (-) TimerEvent: {}
+[0.148389] (my_testing) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HTTPS_PROXY': 'http://127.0.0.1:7897/', 'no_proxy': 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1', 'LANGUAGE': 'zh_CN:zh', 'USER': 'phr', 'all_proxy': 'socks://127.0.0.1:7897/', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/phr', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.102.2', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '3581', 'BUNDLED_DEBUGPY_PATH': '/home/phr/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d19e3bad55dd89a86e0afaef689167f4', 'COLORTERM': 'truecolor', 'https_proxy': 'http://127.0.0.1:7897/', 'COLCON_PREFIX_PATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'phr', 'ALL_PROXY': 'socks://127.0.0.1:7897/', 'http_proxy': 'http://127.0.0.1:7897/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phr', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/phr/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/phr/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/PHR:@/tmp/.ICE-unix/3581,unix/PHR:/tmp/.ICE-unix/3581', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1940d91a_189f_43fa_94e8_8d072caef7c4', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/phr/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-34aef6fe3a9e5cf6.txt', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-02258c1e82.sock', 'GNOME_TERMINAL_SERVICE': ':1.224', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'ROSDISTRO_INDEX_URL': 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d19e3bad55dd89a86e0afaef689167f4', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_testing/lib/python3.10/site-packages:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://127.0.0.1:7897/', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_interfaces', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml --junit-prefix=my_testing -o cache_dir=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache -s'}, 'shell': False}
+[0.199273] (-) TimerEvent: {}
+[0.294199] (my_testing) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.294401] (my_testing) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[0.296268] (my_testing) StdoutLine: {'line': b'cachedir: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache\n'}
+[0.296382] (my_testing) StdoutLine: {'line': b'rootdir: /home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing\n'}
+[0.296448] (my_testing) StdoutLine: {'line': b'plugins: launch-testing-1.0.10, ament-lint-0.12.14, ament-copyright-0.12.14, ament-xmllint-0.12.14, launch-testing-ros-0.19.10, ament-pep257-0.12.14, ament-flake8-0.12.14, colcon-core-0.19.0, cov-3.0.0\n'}
+[0.299355] (-) TimerEvent: {}
+[0.359164] (my_testing) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.359266] (my_testing) StdoutLine: {'line': b'collected 1 item                                                               \x1b[0m\n'}
+[0.359368] (my_testing) StdoutLine: {'line': b'\n'}
+[0.366995] (my_testing) StdoutLine: {'line': b'test/test_integration.py [INFO] [launch]: All log files can be found below /home/phr/.ros/log/2025-08-05-22-38-49-538904-PHR-53256\n'}
+[0.367119] (my_testing) StdoutLine: {'line': b'[INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[0.382144] (my_testing) StdoutLine: {'line': b'[INFO] [number_publisher-1]: process started with pid [53270]\n'}
+[0.382299] (my_testing) StdoutLine: {'line': b'[INFO] [number_processor-2]: process started with pid [53272]\n'}
+[0.399447] (-) TimerEvent: {}
+[0.405100] (my_testing) StderrLine: {'line': b'test_communication_and_logic (test_integration.TestIntegration) ... \x1b[0m[INFO] [1754404729.584371771] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9test_subscriber_node\xe5\xb7\xb2\xe5\x88\x9b\xe5\xbb\xba\x1b[0m\n'}
+[0.476899] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404729.655906287] [number_processor]: \xe6\x95\xb0\xe5\xad\x97\xe5\xa4\x84\xe7\x90\x86\xe8\x8a\x82\xe7\x82\xb9\xe5\xb7\xb2\xe5\x90\xaf\xe5\x8a\xa8\xef\xbc\x8c\xe7\xad\x89\xe5\xbe\x85\xe6\x8e\xa5\xe6\x94\xb6\xe6\x95\xb0\xe5\xad\x97...\n'}
+[0.477071] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404729.655931221] [number_publisher]: \xe6\x95\xb0\xe5\xad\x97\xe5\x8f\x91\xe5\xb8\x83\xe8\x8a\x82\xe7\x82\xb9\xe5\xb7\xb2\xe5\x90\xaf\xe5\x8a\xa8\xef\xbc\x8c\xe5\xb0\x86\xe4\xbb\x8e1\xe5\xbc\x80\xe5\xa7\x8b\xe5\x8f\x91\xe5\xb8\x83...\n'}
+[0.499536] (-) TimerEvent: {}
+[0.599707] (-) TimerEvent: {}
+[0.699879] (-) TimerEvent: {}
+[0.800001] (-) TimerEvent: {}
+[0.900145] (-) TimerEvent: {}
+[1.000276] (-) TimerEvent: {}
+[1.100438] (-) TimerEvent: {}
+[1.200571] (-) TimerEvent: {}
+[1.300728] (-) TimerEvent: {}
+[1.400858] (-) TimerEvent: {}
+[1.471957] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404730.650856922] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 1\n'}
+[1.472264] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404730.651139502] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 1\n'}
+[1.473074] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404730.651552688] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 3\n'}
+[1.500967] (-) TimerEvent: {}
+[1.601195] (-) TimerEvent: {}
+[1.701422] (-) TimerEvent: {}
+[1.801653] (-) TimerEvent: {}
+[1.901846] (-) TimerEvent: {}
+[2.002053] (-) TimerEvent: {}
+[2.102246] (-) TimerEvent: {}
+[2.202456] (-) TimerEvent: {}
+[2.302654] (-) TimerEvent: {}
+[2.402848] (-) TimerEvent: {}
+[2.472304] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404731.651148110] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 2\n'}
+[2.473079] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404731.651366575] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 2\n'}
+[2.473295] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404731.651966169] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 6\n'}
+[2.502966] (-) TimerEvent: {}
+[2.603247] (-) TimerEvent: {}
+[2.703572] (-) TimerEvent: {}
+[2.803826] (-) TimerEvent: {}
+[2.904074] (-) TimerEvent: {}
+[3.004373] (-) TimerEvent: {}
+[3.104653] (-) TimerEvent: {}
+[3.204952] (-) TimerEvent: {}
+[3.305227] (-) TimerEvent: {}
+[3.405525] (-) TimerEvent: {}
+[3.472360] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404732.651166228] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 3\n'}
+[3.472793] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404732.651358573] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 3\n'}
+[3.473134] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404732.652029406] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 9\n'}
+[3.474068] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754404732.653302207] [test_subscriber_node]: \xe6\xa3\x80\xe6\x9f\xa5\xe6\x8e\xa5\xe6\x94\xb6\xe5\x88\xb0\xe7\x9a\x84\xe6\xb6\x88\xe6\x81\xaf\xe3\x80\x82 Got: [3, 6, 9]\x1b[0m\n'}
+[3.478376] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754404732.657587226] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe7\xbb\x93\xe6\x9d\x9f\xef\xbc\x8c\xe9\x94\x80\xe6\xaf\x81\xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9\x1b[0m\n'}
+[3.478587] (my_testing) StderrLine: {'line': b'FAIL\n'}
+[3.487423] (my_testing) StderrLine: {'line': b'test_processor_starts_ok (test_integration.TestIntegration) ... \x1b[0m[INFO] [1754404732.666634563] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9test_subscriber_node\xe5\xb7\xb2\xe5\x88\x9b\xe5\xbb\xba\x1b[0m\n'}
+[3.488037] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754404732.667305396] [test_subscriber_node]: \xe6\xad\xa3\xe5\x9c\xa8\xe6\xa3\x80\xe6\x9f\xa5 processor \xe8\x8a\x82\xe7\x82\xb9\xe7\x9a\x84\xe5\x90\xaf\xe5\x8a\xa8\xe6\x97\xa5\xe5\xbf\x97...\x1b[0m\n'}
+[3.505605] (-) TimerEvent: {}
+[3.605804] (-) TimerEvent: {}
+[3.706028] (-) TimerEvent: {}
+[3.806250] (-) TimerEvent: {}
+[3.906498] (-) TimerEvent: {}
+[4.006732] (-) TimerEvent: {}
+[4.106959] (-) TimerEvent: {}
+[4.207172] (-) TimerEvent: {}
+[4.307396] (-) TimerEvent: {}
+[4.407615] (-) TimerEvent: {}
+[4.472271] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404733.651049005] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 4\n'}
+[4.472618] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404733.651412324] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 4\n'}
+[4.472861] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404733.651976298] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 12\n'}
+[4.507717] (-) TimerEvent: {}
+[4.607940] (-) TimerEvent: {}
+[4.708171] (-) TimerEvent: {}
+[4.808390] (-) TimerEvent: {}
+[4.908598] (-) TimerEvent: {}
+[5.008828] (-) TimerEvent: {}
+[5.109023] (-) TimerEvent: {}
+[5.209242] (-) TimerEvent: {}
+[5.309455] (-) TimerEvent: {}
+[5.409650] (-) TimerEvent: {}
+[5.472251] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404734.651049339] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 5\n'}
+[5.472693] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404734.651375851] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 5\n'}
+[5.472845] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404734.651926765] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 15\n'}
+[5.509750] (-) TimerEvent: {}
+[5.610002] (-) TimerEvent: {}
+[5.710253] (-) TimerEvent: {}
+[5.810516] (-) TimerEvent: {}
+[5.910804] (-) TimerEvent: {}
+[6.011034] (-) TimerEvent: {}
+[6.111273] (-) TimerEvent: {}
+[6.211539] (-) TimerEvent: {}
+[6.311779] (-) TimerEvent: {}
+[6.412037] (-) TimerEvent: {}
+[6.472288] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404735.651087680] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 6\n'}
+[6.472671] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404735.651422503] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 6\n'}
+[6.473073] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404735.652028033] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 18\n'}
+[6.512152] (-) TimerEvent: {}
+[6.612401] (-) TimerEvent: {}
+[6.712655] (-) TimerEvent: {}
+[6.812881] (-) TimerEvent: {}
+[6.913119] (-) TimerEvent: {}
+[7.013384] (-) TimerEvent: {}
+[7.113656] (-) TimerEvent: {}
+[7.213921] (-) TimerEvent: {}
+[7.314174] (-) TimerEvent: {}
+[7.414394] (-) TimerEvent: {}
+[7.472279] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404736.651143843] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 7\n'}
+[7.472568] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404736.651377744] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 7\n'}
+[7.472882] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404736.651909661] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 21\n'}
+[7.514502] (-) TimerEvent: {}
+[7.614781] (-) TimerEvent: {}
+[7.715061] (-) TimerEvent: {}
+[7.815319] (-) TimerEvent: {}
+[7.915577] (-) TimerEvent: {}
+[8.015803] (-) TimerEvent: {}
+[8.116055] (-) TimerEvent: {}
+[8.216353] (-) TimerEvent: {}
+[8.316674] (-) TimerEvent: {}
+[8.416929] (-) TimerEvent: {}
+[8.472303] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404737.651107408] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 8\n'}
+[8.472724] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404737.651393551] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 8\n'}
+[8.473140] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404737.651961088] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 24\n'}
+[8.517037] (-) TimerEvent: {}
+[8.617305] (-) TimerEvent: {}
+[8.717610] (-) TimerEvent: {}
+[8.817895] (-) TimerEvent: {}
+[8.918166] (-) TimerEvent: {}
+[9.018421] (-) TimerEvent: {}
+[9.118770] (-) TimerEvent: {}
+[9.219085] (-) TimerEvent: {}
+[9.319351] (-) TimerEvent: {}
+[9.419645] (-) TimerEvent: {}
+[9.472165] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404738.651048427] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 9\n'}
+[9.472491] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404738.651331008] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 9\n'}
+[9.472827] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404738.651884297] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 27\n'}
+[9.519742] (-) TimerEvent: {}
+[9.619990] (-) TimerEvent: {}
+[9.720266] (-) TimerEvent: {}
+[9.820607] (-) TimerEvent: {}
+[9.920912] (-) TimerEvent: {}
+[10.021185] (-) TimerEvent: {}
+[10.121480] (-) TimerEvent: {}
+[10.221755] (-) TimerEvent: {}
+[10.322007] (-) TimerEvent: {}
+[10.422283] (-) TimerEvent: {}
+[10.472289] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404739.651124813] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 10\n'}
+[10.472600] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404739.651345653] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 10\n'}
+[10.472831] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404739.651897754] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 30\n'}
+[10.522392] (-) TimerEvent: {}
+[10.622662] (-) TimerEvent: {}
+[10.722926] (-) TimerEvent: {}
+[10.823195] (-) TimerEvent: {}
+[10.923497] (-) TimerEvent: {}
+[11.023762] (-) TimerEvent: {}
+[11.124035] (-) TimerEvent: {}
+[11.224296] (-) TimerEvent: {}
+[11.324592] (-) TimerEvent: {}
+[11.424882] (-) TimerEvent: {}
+[11.472207] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404740.651086041] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 11\n'}
+[11.472646] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404740.651488541] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 11\n'}
+[11.473061] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404740.652104757] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 33\n'}
+[11.524993] (-) TimerEvent: {}
+[11.625250] (-) TimerEvent: {}
+[11.725539] (-) TimerEvent: {}
+[11.825836] (-) TimerEvent: {}
+[11.926131] (-) TimerEvent: {}
+[12.026417] (-) TimerEvent: {}
+[12.126716] (-) TimerEvent: {}
+[12.226987] (-) TimerEvent: {}
+[12.327247] (-) TimerEvent: {}
+[12.427542] (-) TimerEvent: {}
+[12.472190] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404741.651072215] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 12\n'}
+[12.472596] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404741.651504398] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 12\n'}
+[12.473026] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404741.652141986] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 36\n'}
+[12.527667] (-) TimerEvent: {}
+[12.628006] (-) TimerEvent: {}
+[12.728364] (-) TimerEvent: {}
+[12.828663] (-) TimerEvent: {}
+[12.928949] (-) TimerEvent: {}
+[13.029234] (-) TimerEvent: {}
+[13.129529] (-) TimerEvent: {}
+[13.229790] (-) TimerEvent: {}
+[13.330051] (-) TimerEvent: {}
+[13.430312] (-) TimerEvent: {}
+[13.472189] (my_testing) StdoutLine: {'line': b'[number_publisher-1] [INFO] [1754404742.651041780] [number_publisher]: \xe5\x8f\x91\xe5\xb8\x83: 13\n'}
+[13.472583] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404742.651300614] [number_processor]: \xe6\x94\xb6\xe5\x88\xb0: 13\n'}
+[13.473117] (my_testing) StdoutLine: {'line': b'[number_processor-2] [INFO] [1754404742.651821845] [number_processor]: \xe5\x8f\x91\xe5\xb8\x83\xe5\xa4\x84\xe7\x90\x86\xe5\x90\x8e\xe7\xbb\x93\xe6\x9e\x9c: 39\n'}
+[13.492741] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754404742.671914774] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe7\xbb\x93\xe6\x9d\x9f\xef\xbc\x8c\xe9\x94\x80\xe6\xaf\x81\xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9\x1b[0m\n'}
+[13.493033] (my_testing) StderrLine: {'line': b'FAIL\n'}
+[13.501227] (my_testing) StderrLine: {'line': b'test_publisher_starts_ok (test_integration.TestIntegration) ... \x1b[0m[INFO] [1754404742.680476500] [test_subscriber_node]: \xe6\xb5\x8b\xe8\xaf\x95\xe8\x8a\x82\xe7\x82\xb9test_subscriber_node\xe5\xb7\xb2\xe5\x88\x9b\xe5\xbb\xba\x1b[0m\n'}
+[13.501694] (my_testing) StderrLine: {'line': b'\x1b[0m[INFO] [1754404742.680964487] [test_subscriber_node]: \xe6\xad\xa3\xe5\x9c\xa8\xe6\xa3\x80\xe6\x9f\xa5 publisher \xe8\x8a\x82\xe7\x82\xb9\xe7\x9a\x84\xe5\x90\xaf\xe5\x8a\xa8\xe6\x97\xa5\xe5\xbf\x97...\x1b[0m\n'}
+[13.530411] (-) TimerEvent: {}
+[13.630661] (-) TimerEvent: {}
+[13.730872] (-) TimerEvent: {}
+[13.831067] (-) TimerEvent: {}
+[13.931267] (-) TimerEvent: {}
+[14.031537] (-) TimerEvent: {}
+[14.131853] (-) TimerEvent: {}
+[14.164673] (my_testing) StdoutLine: {'line': b'[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)\n'}
+[14.166202] (my_testing) StdoutLine: {'line': b'[number_processor-2] Traceback (most recent call last):\n'}
+[14.166417] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor", line 33, in <module>\n'}
+[14.166557] (my_testing) StdoutLine: {'line': b"[number_processor-2]     sys.exit(load_entry_point('my-algorithms==0.0.0', 'console_scripts', 'number_processor')())\n"}
+[14.166676] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_processor_node.py", line 32, in main\n'}
+[14.166782] (my_testing) StdoutLine: {'line': b'[number_processor-2]     rclpy.spin(node)\n'}
+[14.166912] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin\n'}
+[14.167016] (my_testing) StdoutLine: {'line': b'[number_processor-2]     executor.spin_once()\n'}
+[14.167124] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once\n'}
+[14.167244] (my_testing) StdoutLine: {'line': b'[number_processor-2]     self._spin_once_impl(timeout_sec)\n'}
+[14.167432] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl\n'}
+[14.167568] (my_testing) StdoutLine: {'line': b'[number_processor-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)\n'}
+[14.167687] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks\n'}
+[14.167787] (my_testing) StdoutLine: {'line': b'[number_processor-2]     return next(self._cb_iter)\n'}
+[14.167894] (my_testing) StdoutLine: {'line': b'[number_processor-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks\n'}
+[14.168021] (my_testing) StdoutLine: {'line': b'[number_processor-2]     wait_set.wait(timeout_nsec)\n'}
+[14.168116] (my_testing) StdoutLine: {'line': b'[number_processor-2] KeyboardInterrupt\n'}
+[14.168219] (my_testing) StdoutLine: {'line': b'[number_publisher-1] Traceback (most recent call last):\n'}
+[14.168308] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_publisher", line 33, in <module>\n'}
+[14.168527] (my_testing) StdoutLine: {'line': b"[number_publisher-1]     sys.exit(load_entry_point('my-algorithms==0.0.0', 'console_scripts', 'number_publisher')())\n"}
+[14.168668] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_publisher_node.py", line 25, in main\n'}
+[14.168794] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     rclpy.spin(node)\n'}
+[14.168892] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin\n'}
+[14.168985] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     executor.spin_once()\n'}
+[14.169073] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once\n'}
+[14.169161] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     self._spin_once_impl(timeout_sec)\n'}
+[14.169250] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl\n'}
+[14.169358] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)\n'}
+[14.169446] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks\n'}
+[14.169519] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     return next(self._cb_iter)\n'}
+[14.169586] (my_testing) StdoutLine: {'line': b'[number_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks\n'}
+[14.169652] (my_testing) StdoutLine: {'line': b'[number_publisher-1]     wait_set.wait(timeout_nsec)\n'}
+[14.169730] (my_testing) StdoutLine: {'line': b'[number_publisher-1] KeyboardInterrupt\n'}
+[14.193837] (my_testing) StdoutLine: {'line': b"[ERROR] [number_publisher-1]: process has died [pid 53270, exit code -2, cmd '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_publisher --ros-args -r __node:=number_publisher'].\n"}
+[14.195925] (my_testing) StdoutLine: {'line': b"[ERROR] [number_processor-2]: process has died [pid 53272, exit code -2, cmd '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor --ros-args -r __node:=number_processor'].\n"}
+[14.196312] (my_testing) StdoutLine: {'line': b'Processes under test stopped before tests completed\n'}
+[14.196468] (my_testing) StdoutLine: {'line': b"Process 'number_publisher-1' exited with -2\n"}
+[14.196561] (my_testing) StdoutLine: {'line': b"##### 'number_publisher-1' output #####\n"}
+[14.231954] (-) TimerEvent: {}
+[14.255265] (my_testing) StdoutLine: {'line': b'\x1b[31mF\x1b[0m\n'}
+[14.255502] (my_testing) StdoutLine: {'line': b'\n'}
+[14.255602] (my_testing) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[14.255681] (my_testing) StdoutLine: {'line': b'\x1b[31m\x1b[1m________________________ launch tests: test_integration ________________________\x1b[0m\n'}
+[14.255757] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/_pytest/runner.py\x1b[0m:311: in from_call\n'}
+[14.302541] (my_testing) StdoutLine: {'line': b'    result: Optional[TResult] = func()\n'}
+[14.302801] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/_pytest/runner.py\x1b[0m:255: in <lambda>\n'}
+[14.302959] (my_testing) StdoutLine: {'line': b'    \x1b[94mlambda\x1b[39;49;00m: ihook(item=item, **kwds), when=when, reraise=reraise\n'}
+[14.303040] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/pluggy/hooks.py\x1b[0m:286: in __call__\n'}
+[14.303159] (my_testing) StdoutLine: {'line': b'    \x1b[94mreturn\x1b[39;49;00m \x1b[96mself\x1b[39;49;00m._hookexec(\x1b[96mself\x1b[39;49;00m, \x1b[96mself\x1b[39;49;00m.get_hookimpls(), kwargs)\n'}
+[14.303240] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/pluggy/manager.py\x1b[0m:92: in _hookexec\n'}
+[14.303433] (my_testing) StdoutLine: {'line': b'    \x1b[94mreturn\x1b[39;49;00m \x1b[96mself\x1b[39;49;00m._inner_hookexec(hook, methods, kwargs)\n'}
+[14.303603] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/pluggy/manager.py\x1b[0m:83: in <lambda>\n'}
+[14.303769] (my_testing) StdoutLine: {'line': b'    \x1b[96mself\x1b[39;49;00m._inner_hookexec = \x1b[94mlambda\x1b[39;49;00m hook, methods, kwargs: hook.multicall(\n'}
+[14.303866] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/pluggy/callers.py\x1b[0m:208: in _multicall\n'}
+[14.303974] (my_testing) StdoutLine: {'line': b'    \x1b[94mreturn\x1b[39;49;00m outcome.get_result()\n'}
+[14.304056] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/pluggy/callers.py\x1b[0m:80: in get_result\n'}
+[14.304161] (my_testing) StdoutLine: {'line': b'    \x1b[94mraise\x1b[39;49;00m ex[\x1b[94m1\x1b[39;49;00m].with_traceback(ex[\x1b[94m2\x1b[39;49;00m])\n'}
+[14.304239] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/pluggy/callers.py\x1b[0m:187: in _multicall\n'}
+[14.304398] (my_testing) StdoutLine: {'line': b'    res = hook_impl.function(*args)\n'}
+[14.304544] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/_pytest/runner.py\x1b[0m:170: in pytest_runtest_call\n'}
+[14.304669] (my_testing) StdoutLine: {'line': b'    \x1b[94mraise\x1b[39;49;00m e\n'}
+[14.304751] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/usr/lib/python3/dist-packages/_pytest/runner.py\x1b[0m:162: in pytest_runtest_call\n'}
+[14.304861] (my_testing) StdoutLine: {'line': b'    item.runtest()\n'}
+[14.304928] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py\x1b[0m:112: in runtest\n'}
+[14.305039] (my_testing) StdoutLine: {'line': b'    results_per_run = runner.run()\n'}
+[14.305107] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/opt/ros/humble/lib/python3.10/site-packages/launch_testing/test_runner.py\x1b[0m:256: in run\n'}
+[14.305175] (my_testing) StdoutLine: {'line': b'    results[run] = worker.run()\n'}
+[14.305272] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/opt/ros/humble/lib/python3.10/site-packages/launch_testing/test_runner.py\x1b[0m:167: in run\n'}
+[14.305368] (my_testing) StdoutLine: {'line': b'    \x1b[96mself\x1b[39;49;00m._print_process_output_summary(proc_info, proc_output)\n'}
+[14.305445] (my_testing) StdoutLine: {'line': b'\x1b[1m\x1b[31m/opt/ros/humble/lib/python3.10/site-packages/launch_testing/test_runner.py\x1b[0m:209: in _print_process_output_summary\n'}
+[14.305539] (my_testing) StdoutLine: {'line': b"    \x1b[96mprint\x1b[39;49;00m(\x1b[33m'\x1b[39;49;00m\x1b[33m{}\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m.format(io.text.decode(\x1b[33m'\x1b[39;49;00m\x1b[33mascii\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m)))\n"}
+[14.305623] (my_testing) StdoutLine: {'line': b"\x1b[1m\x1b[31mE   UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 50: ordinal not in range(128)\x1b[0m\n"}
+[14.305696] (my_testing) StdoutLine: {'line': b'- generated xml file: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml -\n'}
+[14.305771] (my_testing) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[14.305847] (my_testing) StdoutLine: {'line': b"FAILED test/test_integration.py::test_integration - UnicodeDecodeError: 'asci...\n"}
+[14.305913] (my_testing) StdoutLine: {'line': b'\x1b[31m============================== \x1b[31m\x1b[1m1 failed\x1b[0m\x1b[31m in 14.01s\x1b[0m\x1b[31m ==============================\x1b[0m\n'}
+[14.332083] (-) TimerEvent: {}
+[14.432448] (-) TimerEvent: {}
+[14.472016] (my_testing) CommandEnded: {'returncode': 1}
+[14.472649] (my_testing) TestFailure: {'identifier': 'my_testing'}
+[14.472695] (my_testing) JobEnded: {'identifier': 'my_testing', 'rc': 'SIGINT'}
+[14.482500] (-) EventReactorShutdown: {}

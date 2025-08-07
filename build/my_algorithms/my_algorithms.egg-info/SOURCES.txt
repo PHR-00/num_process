@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/my_algorithms/my_algorithms.egg-info/PKG-INFO
+../../build/my_algorithms/my_algorithms.egg-info/SOURCES.txt
+../../build/my_algorithms/my_algorithms.egg-info/dependency_links.txt
+../../build/my_algorithms/my_algorithms.egg-info/entry_points.txt
+../../build/my_algorithms/my_algorithms.egg-info/requires.txt
+../../build/my_algorithms/my_algorithms.egg-info/top_level.txt
+../../build/my_algorithms/my_algorithms.egg-info/zip-safe
+my_algorithms/__init__.py
+my_algorithms/number_processor_node.py
+my_algorithms/number_publisher_node.py
+resource/my_algorithms
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,14 @@
+[0.123s] Invoking command in '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml --junit-prefix=my_testing -o cache_dir=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.255s] [1m============================= test session starts ==============================[0m
+[0.255s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.257s] cachedir: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache
+[0.257s] rootdir: /home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing
+[0.257s] plugins: launch-testing-1.0.10, ament-lint-0.12.14, ament-copyright-0.12.14, ament-xmllint-0.12.14, launch-testing-ros-0.19.10, ament-pep257-0.12.14, ament-flake8-0.12.14, colcon-core-0.19.0, cov-3.0.0
+[0.318s] [1mcollecting ... [0m[1m
+[0.318s] collected 1 item                                                               [0m
+[0.318s] 
+[0.459s] test/test_integration.py [32m.[0m[32m                                               [100%][0m
+[0.459s] 
+[0.459s] - generated xml file: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml -
+[0.459s] [32m============================== [32m[1m1 passed[0m[32m in 0.20s[0m[32m ===============================[0m
+[0.591s] Invoked command in '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml --junit-prefix=my_testing -o cache_dir=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
