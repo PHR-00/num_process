@@ -19,9 +19,9 @@ jobs:
       # 检出代码
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          # 如果您的仓库中包含子模块，请取消下面一行的注释
-          # submodules: recursive
+        # 如果您的仓库中包含子模块，请取消下面一行的注释
+        # with:
+        #   submodules: recursive
 
       - name: Setup ROS 2
         uses: ros-tooling/setup-ros@v1
