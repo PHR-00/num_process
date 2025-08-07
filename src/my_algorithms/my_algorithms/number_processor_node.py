@@ -25,6 +25,9 @@ class NumberProcessorNode(Node):
         """
         input_num = request.num
         self.get_logger().info(f'收到服务请求，输入数字: {input_num}')
+
+        if input_num == 0:
+            response.processed_num = 1
         
         response.processed_num = input_num * 3
         
