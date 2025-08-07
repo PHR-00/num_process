@@ -1,0 +1,55 @@
+name: num_process_CI
+
+# 触发工作流的事件
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  # 名为 build-and-test
+  build-and-test:
+    runs-on: ubuntu-22.04
+
+    # 执行步骤
+    steps:
+      # 检出代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # 如果您的仓库中包含子模块，请取消下面一行的注释
+          # submodules: recursive
+
+      - name: Setup ROS 2
+        uses: ros-tooling/setup-ros@v1
+        with:
+          required-ros-distributions: humble
+
+      # 使用 rosdep 安装所有依赖项，自动读取所有 package.xml 文件，并安装其中声明的依赖
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          rosdep update
+          rosdep install --from-paths src --ignore-src -y --rosdistro humble
+
+
+      - name: Build workspace
+        run: |
+          source /opt/ros/humble/setup.bash
+          colcon build
+
+      - name: Run tests
+        run: |
+          source install/setup.bash
+          colcon test --packages-select my_testing --pytest-args "--junit-xml=test_results.xml"
+
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: build/my_testing/test_results.xml
