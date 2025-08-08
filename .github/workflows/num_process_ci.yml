@@ -39,7 +39,7 @@ jobs:
         run: |
           source install/setup.bash
           mkdir -p build/my_testing
-          colcon test --packages-select my_testing --pytest-args "--junit-xml=build/my_testing/test_results.xml"
+          colcon test --packages-select my_testing --event-handlers console_direct+ --pytest-args "--junit-xml=build/my_testing/test_results.xml"
       - name: List files after test
         run: |
           echo "== Listing test output =="
