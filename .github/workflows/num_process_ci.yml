@@ -30,6 +30,7 @@ jobs:
       - name: Build workspace
         shell: bash
         run: |
+          rm -rf build/ install/ log/
           source /opt/ros/humble/setup.bash
           colcon build
 
@@ -37,7 +38,12 @@ jobs:
         shell: bash
         run: |
           source install/setup.bash
+          mkdir -p build/my_testing
           colcon test --packages-select my_testing --pytest-args "--junit-xml=test_results.xml"
+      - name: List files after test
+        run: |
+          echo "== Listing test output =="
+          find . -name "*.xml"
 
       - name: Upload test results
         if: always()
