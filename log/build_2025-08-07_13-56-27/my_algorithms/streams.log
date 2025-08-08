@@ -1,0 +1,25 @@
+[0.294s] Invoking command in '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_algorithms': PYTHONPATH=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_algorithms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_algorithms build --build-base /home/phr/vscode_project/ros2_launch_testing_ws/build/my_algorithms/build install --record /home/phr/vscode_project/ros2_launch_testing_ws/build/my_algorithms/install.log --single-version-externally-managed install_data
+[0.400s] running egg_info
+[0.400s] writing ../../build/my_algorithms/my_algorithms.egg-info/PKG-INFO
+[0.400s] writing dependency_links to ../../build/my_algorithms/my_algorithms.egg-info/dependency_links.txt
+[0.400s] writing entry points to ../../build/my_algorithms/my_algorithms.egg-info/entry_points.txt
+[0.400s] writing requirements to ../../build/my_algorithms/my_algorithms.egg-info/requires.txt
+[0.400s] writing top-level names to ../../build/my_algorithms/my_algorithms.egg-info/top_level.txt
+[0.401s] reading manifest file '../../build/my_algorithms/my_algorithms.egg-info/SOURCES.txt'
+[0.402s] writing manifest file '../../build/my_algorithms/my_algorithms.egg-info/SOURCES.txt'
+[0.402s] running build
+[0.402s] running build_py
+[0.402s] copying my_algorithms/number_processor_node.py -> /home/phr/vscode_project/ros2_launch_testing_ws/build/my_algorithms/build/lib/my_algorithms
+[0.402s] running install
+[0.402s] running install_lib
+[0.403s] copying /home/phr/vscode_project/ros2_launch_testing_ws/build/my_algorithms/build/lib/my_algorithms/number_processor_node.py -> /home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms
+[0.403s] byte-compiling /home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_processor_node.py to number_processor_node.cpython-310.pyc
+[0.403s] running install_data
+[0.403s] running install_egg_info
+[0.404s] removing '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms-0.0.0-py3.10.egg-info' (and everything under it)
+[0.404s] Copying ../../build/my_algorithms/my_algorithms.egg-info to /home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms-0.0.0-py3.10.egg-info
+[0.405s] running install_scripts
+[0.415s] Installing number_processor script to /home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms
+[0.415s] Installing number_publisher script to /home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms
+[0.415s] writing list of installed files to '/home/phr/vscode_project/ros2_launch_testing_ws/build/my_algorithms/install.log'
+[0.428s] Invoked command in '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_algorithms' returned '0': PYTHONPATH=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_algorithms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_algorithms build --build-base /home/phr/vscode_project/ros2_launch_testing_ws/build/my_algorithms/build install --record /home/phr/vscode_project/ros2_launch_testing_ws/build/my_algorithms/install.log --single-version-externally-managed install_data

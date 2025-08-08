@@ -1,0 +1,67 @@
+[0.167s] Invoking command in '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml --junit-prefix=my_testing -o cache_dir=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache -s PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.348s] [1m============================= test session starts ==============================[0m
+[0.348s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.351s] cachedir: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache
+[0.351s] rootdir: /home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing
+[0.351s] plugins: launch-testing-1.0.10, ament-lint-0.12.14, ament-copyright-0.12.14, ament-xmllint-0.12.14, launch-testing-ros-0.19.10, ament-pep257-0.12.14, ament-flake8-0.12.14, colcon-core-0.19.0, cov-3.0.0
+[0.418s] [1mcollecting ... [0m[1m
+[0.418s] collected 1 item                                                               [0m
+[0.418s] 
+[0.426s] test/test_processor_service.py [INFO] [launch]: All log files can be found below /home/phr/.ros/log/2025-08-07-13-54-24-164754-PHR-22865
+[0.426s] [INFO] [launch]: Default logging verbosity is set to INFO
+[0.437s] [INFO] [number_processor-1]: process started with pid [22879]
+[0.534s] [number_processor-1] [INFO] [1754546064.279978464] [number_processor_service_node]: 数字处理服务节点已启动，等待请求...
+[0.712s] test_service (test_processor_service.TestProcessorService) ... [0m[INFO] [1754546064.458073386] [service_client_test_node]: 正在发送请求: 10...[0m
+[0.713s] [number_processor-1] [INFO] [1754546064.458762056] [number_processor_service_node]: 收到服务请求，输入数字: 10
+[0.713s] [number_processor-1] [INFO] [1754546064.458979344] [number_processor_service_node]: 正在返回处理结果: 30
+[0.713s] [0m[INFO] [1754546064.459464975] [service_client_test_node]: 测试用例通过: 输入=10, 响应=30[0m
+[0.713s] [0m[INFO] [1754546064.459650203] [service_client_test_node]: 正在发送请求: -5...[0m
+[0.714s] [number_processor-1] [INFO] [1754546064.460008787] [number_processor_service_node]: 收到服务请求，输入数字: -5
+[0.714s] [number_processor-1] [INFO] [1754546064.460190454] [number_processor_service_node]: 正在返回处理结果: -15
+[0.714s] [0m[INFO] [1754546064.460568035] [service_client_test_node]: 测试用例通过: 输入=-5, 响应=-15[0m
+[0.714s] [0m[INFO] [1754546064.460747327] [service_client_test_node]: 正在发送请求: 0...[0m
+[0.715s] [number_processor-1] [INFO] [1754546064.461099973] [number_processor_service_node]: 收到服务请求，输入数字: 0
+[0.715s] [number_processor-1] [INFO] [1754546064.461286389] [number_processor_service_node]: 正在返回处理结果: 0
+[0.715s] [0m[INFO] [1754546064.461654472] [service_client_test_node]: 测试用例通过: 输入=0, 响应=0[0m
+[0.715s] [0m[INFO] [1754546064.461850387] [service_client_test_node]: 正在发送请求: 1...[0m
+[0.716s] [number_processor-1] [INFO] [1754546064.462192347] [number_processor_service_node]: 收到服务请求，输入数字: 1
+[0.716s] [number_processor-1] [INFO] [1754546064.462376388] [number_processor_service_node]: 正在返回处理结果: 3
+[0.716s] [0m[INFO] [1754546064.462753970] [service_client_test_node]: 测试用例通过: 输入=1, 响应=3[0m
+[0.717s] [0m[INFO] [1754546064.462939198] [service_client_test_node]: 正在发送请求: 100...[0m
+[0.717s] [number_processor-1] [INFO] [1754546064.463279972] [number_processor_service_node]: 收到服务请求，输入数字: 100
+[0.717s] [number_processor-1] [INFO] [1754546064.463464013] [number_processor_service_node]: 正在返回处理结果: 300
+[0.717s] [0m[INFO] [1754546064.463836845] [service_client_test_node]: 测试用例通过: 输入=100, 响应=300[0m
+[0.719s] ok
+[0.719s] 
+[0.719s] ----------------------------------------------------------------------
+[0.720s] Ran 1 test in 0.293s
+[0.720s] 
+[0.720s] OK
+[0.720s] [INFO] [number_processor-1]: sending signal 'SIGINT' to process[number_processor-1]
+[0.720s] [number_processor-1] Traceback (most recent call last):
+[0.720s] [number_processor-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor", line 33, in <module>
+[0.720s] [number_processor-1]     sys.exit(load_entry_point('my-algorithms==0.0.0', 'console_scripts', 'number_processor')())
+[0.720s] [number_processor-1]   File "/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/python3.10/site-packages/my_algorithms/number_processor_node.py", line 38, in main
+[0.720s] [number_processor-1]     rclpy.spin(node) 
+[0.720s] [number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[0.721s] [number_processor-1]     executor.spin_once()
+[0.721s] [number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[0.721s] [number_processor-1]     self._spin_once_impl(timeout_sec)
+[0.721s] [number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[0.721s] [number_processor-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[0.721s] [number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[0.721s] [number_processor-1]     return next(self._cb_iter)
+[0.721s] [number_processor-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
+[0.721s] [number_processor-1]     wait_set.wait(timeout_nsec)
+[0.721s] [number_processor-1] KeyboardInterrupt
+[0.732s] [ERROR] [number_processor-1]: process has died [pid 22879, exit code -2, cmd '/home/phr/vscode_project/ros2_launch_testing_ws/install/my_algorithms/lib/my_algorithms/number_processor --ros-args -r __node:=number_processor_service_node'].
+[0.733s] 
+[0.733s] ----------------------------------------------------------------------
+[0.733s] Ran 0 tests in 0.000s
+[0.733s] 
+[0.733s] OK
+[0.737s] [32m.[0m
+[0.737s] 
+[0.737s] - generated xml file: /home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml -
+[0.737s] [32m============================== [32m[1m1 passed[0m[32m in 0.39s[0m[32m ===============================[0m
+[0.868s] Invoked command in '/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/pytest.xml --junit-prefix=my_testing -o cache_dir=/home/phr/vscode_project/ros2_launch_testing_ws/build/my_testing/.pytest_cache -s PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

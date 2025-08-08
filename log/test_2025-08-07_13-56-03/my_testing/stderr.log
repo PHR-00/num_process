@@ -1,0 +1,24 @@
+test_service (test_processor_service.TestProcessorService) ... [0m[INFO] [1754546164.294786215] [service_client_test_node]: 正在发送请求: 10...[0m
+[0m[INFO] [1754546164.296320276] [service_client_test_node]: 测试用例通过: 输入=10, 响应=30[0m
+[0m[INFO] [1754546164.296542311] [service_client_test_node]: 正在发送请求: -5...[0m
+[0m[INFO] [1754546164.297561061] [service_client_test_node]: 测试用例通过: 输入=-5, 响应=-15[0m
+[0m[INFO] [1754546164.297770036] [service_client_test_node]: 正在发送请求: 0...[0m
+FAIL
+
+======================================================================
+FAIL: test_service (test_processor_service.TestProcessorService)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_processor_service.py", line 70, in test_service
+    self.assertEqual(
+AssertionError: 1 != 0 : 输入 0 时，响应结果不正确！
+
+----------------------------------------------------------------------
+Ran 1 test in 0.291s
+
+FAILED (failures=1)
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK

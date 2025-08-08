@@ -18,20 +18,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install colcon & rosdep
-        run: |
-          apt update
-          apt install -y python3-colcon-common-extensions python3-rosdep
 
-      - name: Initialize rosdep
+      - name: Install dependencies with rosdep
         run: |
-          rosdep update
-          rosdep install --from-paths src --ignore-src -y --rosdistro humble
+          # 为需要系统权限的命令添加 sudo
+          sudo apt-get update
+          sudo rosdep init && rosdep update
+          rosdep install --from-paths src --ignore-src -y --rosdep-keys="python3-yaml"
+
+
 
       - name: Build workspace
+
         run: |
           source /opt/ros/humble/setup.bash
-          colcon build
+          colcon build --symlink-install
 
       - name: Run tests
         run: |
@@ -45,6 +46,11 @@ jobs:
           name: test-results
           path: build/my_testing/test_results.xml
 
+
+
+
+#可否跑在指定机器
+#如果要测...在他的服务器跑没有意义
 
 
 

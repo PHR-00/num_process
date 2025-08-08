@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.394" timestamp="2025-08-07T12:21:20.501739" hostname="PHR"><testcase classname="my_testing.test.test_processor_service" name="test_processor_service" time="0.318" /></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.384" timestamp="2025-08-07T13:56:03.933766" hostname="PHR"><testcase classname="my_testing.test.test_processor_service" name="test_processor_service" time="0.313"><failure message="test_processor_service.TestProcessorService.test_service failed">
+================================================================================================================================
+FAIL: test_processor_service.TestProcessorService.test_service
+--------------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/phr/vscode_project/ros2_launch_testing_ws/src/my_testing/test/test_processor_service.py", line 70, in test_service
+    self.assertEqual(
+AssertionError: 1 != 0 : 输入 0 时，响应结果不正确！
+</failure></testcase></testsuite></testsuites>
