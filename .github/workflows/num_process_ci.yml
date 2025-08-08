@@ -45,6 +45,11 @@ jobs:
           echo "== Listing test output =="
           find . -name "*.xml"
 
+      - name: Check test result summary
+        shell: bash
+        run: |
+          colcon test-result --verbose
+
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
