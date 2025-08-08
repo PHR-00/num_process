@@ -5,10 +5,7 @@ from my_interfaces.msg import Num
 from my_interfaces.srv import ProcessNum 
 
 class NumberProcessorNode(Node):
-    """
-    一个服务节点，提供'process_num'服务。
-    接收一个数字请求，返回它的3倍作为响应。
-    """
+
     def __init__(self):
         super().__init__('number_processor_service_node')
  
@@ -20,15 +17,13 @@ class NumberProcessorNode(Node):
         self.get_logger().info('数字处理服务节点已启动，等待请求...')
 
     def process_num_callback(self, request, response):
-        """
-        当收到请求，此函数被调用。
-        """
+
         input_num = request.num
         self.get_logger().info(f'收到服务请求，输入数字: {input_num}')
 
-        # if input_num == 0:
-        #     response.processed_num = 1
-        #     return response
+        if input_num == 0:
+            response.processed_num = 1
+            return response
         
         response.processed_num = input_num * 3
         
