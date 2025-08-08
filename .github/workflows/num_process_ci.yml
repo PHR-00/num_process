@@ -25,7 +25,7 @@ jobs:
                          ros-humble-launch-testing
           sudo rosdep fix-permissions
           rosdep update
-          rosdep install --from-paths src --ignore-src -y --rosdistro humble --skip-keys=launch_testing_pytest
+          rosdep install --from-paths src --ignore-src -y --rosdistro humble --skip-keys="launch_testing_pytest ament_python"
 
       - name: Build workspace
         run: |
