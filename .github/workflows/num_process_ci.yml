@@ -2,9 +2,9 @@ name: num_process_CI
 
 on:
   push:
-    branches: [ "main", "master"]
+    branches: [ "main", "master" ]
   pull_request:
-    branches: [ "main", "master"]
+    branches: [ "main", "master" ]
   workflow_dispatch:
 
 jobs:
@@ -12,27 +12,25 @@ jobs:
     runs-on: ubuntu-22.04
 
     container:
-      image: ros:humble 
+      image: ros:humble  # 使用官方 ROS 镜像加速 CI
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-
-      - name: Install dependencies
+      - name: Install colcon, rosdep, and test dependencies
         run: |
-          sudo apt-get update
+          apt update
+          apt install -y python3-colcon-common-extensions python3-rosdep \
+                         ros-humble-launch-testing ros-humble-launch-testing-pytest
+          rosdep init || true  # 避免重复 init 报错
           rosdep update
-          rosdep install --from-paths src --ignore-src -y
-          sudo apt-get install -y python3-yaml
-
-
+          rosdep install --from-paths src --ignore-src -y --rosdistro humble --skip-keys=launch_testing_pytest
 
       - name: Build workspace
-
         run: |
           source /opt/ros/humble/setup.bash
-          colcon build --symlink-install
+          colcon build
 
       - name: Run tests
         run: |
@@ -45,7 +43,6 @@ jobs:
         with:
           name: test-results
           path: build/my_testing/test_results.xml
-
 
 
 
