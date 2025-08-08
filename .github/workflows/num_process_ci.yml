@@ -19,12 +19,12 @@ jobs:
         uses: actions/checkout@v4
 
 
-      - name: Install dependencies with rosdep
+      - name: Install dependencies
         run: |
-          # 为需要系统权限的命令添加 sudo
           sudo apt-get update
-          sudo rosdep init && rosdep update
-          rosdep install --from-paths src --ignore-src -y --rosdep-keys="python3-yaml"
+          rosdep update
+          rosdep install --from-paths src --ignore-src -y
+          sudo apt-get install -y python3-yaml
 
 
 
