@@ -28,11 +28,13 @@ jobs:
           rosdep install --from-paths src --ignore-src -y --rosdistro humble --skip-keys="launch_testing_pytest ament_python"
 
       - name: Build workspace
+        shell: bash
         run: |
           source /opt/ros/humble/setup.bash
           colcon build
 
       - name: Run tests
+        shell: bash
         run: |
           source install/setup.bash
           colcon test --packages-select my_testing --pytest-args "--junit-xml=test_results.xml"
