@@ -23,7 +23,7 @@ jobs:
           apt update
           apt install -y python3-colcon-common-extensions python3-rosdep \
                          ros-humble-launch-testing
-          rosdep init || true  # 避免重复 init 报错
+          sudo rosdep fix-permissions
           rosdep update
           rosdep install --from-paths src --ignore-src -y --rosdistro humble --skip-keys=launch_testing_pytest
 
